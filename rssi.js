@@ -16,6 +16,6 @@ app.post('/',(req,res) => {
     
 })
 
-app.listen(port, () => {
+app.listen(process.env.port || port, () => {
   console.log(`Example app listening on port ${port}`)
 })
